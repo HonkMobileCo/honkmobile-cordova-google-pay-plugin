@@ -1,0 +1,19 @@
+{
+  "name": "honkmobile-cordova-google-pay-plugin",
+  "version": "1.1.2",
+  "description": "Cordova plugin for integrating Google Pay in to Honk's Cordova apps",
+  "cordova": {
+    "id": "honkmobile-cordova-google-pay-plugin",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-ios",
+    "googlepay",
+    "google pay"
+  ],
+  "author": "Honk",
+  "license": "ISC"
+}
