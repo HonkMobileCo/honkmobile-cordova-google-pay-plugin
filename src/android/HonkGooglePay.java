@@ -202,11 +202,15 @@ public class HonkGooglePay extends CordovaPlugin {
      */
     private JSONObject getBaseCardPaymentMethod() throws JSONException {
         JSONObject cardPaymentMethod = new JSONObject();
+        JSONObject billingAddressParameters = new JSONObject();
         cardPaymentMethod.put("type", "CARD");
+        billingAddressParameters.put("format", "MIN");
 
         JSONObject parameters = new JSONObject();
         parameters.put("allowedAuthMethods", allowedCardAuthMethods);
         parameters.put("allowedCardNetworks", allowedCardNetworks);
+        parameters.put("billingAddressRequired", true);
+        parameters.put("billingAddressParameters", billingAddressParameters);
         cardPaymentMethod.put("parameters", parameters);
 
         return cardPaymentMethod;
